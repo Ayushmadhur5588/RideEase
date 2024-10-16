@@ -4,17 +4,17 @@
   "rsc": false,
   "tsx": true,
   "tailwind": {
-    "config": "apps/client/tailwind.config.ts",
-    "css": "apps/client/src/styles/global.css",
-    "baseColor": "neutral",
+    "config": "packages/ui/tailwind.config.js",
+    "css": "packages/ui/src/global.css",
+    "baseColor": "slate",
     "cssVariables": false,
     "prefix": ""
   },
   "aliases": {
-    "components": "@/components",
-    "utils": "@/lib/utils",
-    "ui": "@/components/ui",
-    "examples": "@/components/examples",
-    "blocks": "@/components/blocks"
+    "components": "@ui",
+    "utils": "@utils",
+    "ui": "@ui/ui",
+    "examples": "@ui/examples",
+    "blocks": "@ui/blocks"
   }
 }

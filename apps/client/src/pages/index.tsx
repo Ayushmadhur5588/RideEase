@@ -1,17 +1,12 @@
 
 import AppBar from '@repo/ui/AppBar';
-
-import dynamic from 'next/dynamic';
-
-const GlobeComponent = dynamic(() => import('@repo/ui/GlobeComponent'), {
-  ssr: false,
-});
+import HeroComponent from "@repo/ui/hero";
 
 export default function Home() {
   return (
    <div>
     <AppBar />
-    <GlobeComponent />
+    <HeroComponent />
    </div>
   );
 }

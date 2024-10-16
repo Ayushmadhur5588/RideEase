@@ -7,7 +7,7 @@
     "./AppBar": "./src/AppBar.tsx",
     "./Test": "./src/Test.tsx",
     "./global": "./src/global.css",
-    "./GlobeComponent": "./src/GlobeComponent.tsx" 
+    "./hero": "./src/HeroComponent.tsx"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
@@ -28,16 +28,10 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "@react-google-maps/api": "^2.20.3",
     "@react-three/drei": "^9.114.3",
     "@react-three/fiber": "^8.17.10",
-    "aceternity-ui": "^0.2.2",
-    "class-variance-authority": "^0.7.0",
-    "clsx": "^2.1.1",
-    "framer-motion": "^11.11.8",
-    "lucide-react": "^0.452.0",
     "react": "^18.2.0",
-    "tailwind-merge": "^2.5.3",
-    "tailwindcss-animate": "^1.0.7",
     "three": "^0.169.0",
     "three-globe": "^2.32.0"
   }
