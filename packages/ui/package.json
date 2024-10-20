@@ -7,7 +7,11 @@
     "./AppBar": "./src/AppBar.tsx",
     "./Test": "./src/Test.tsx",
     "./global": "./src/global.css",
-    "./hero": "./src/HeroComponent.tsx"
+    "./hero": "./src/HeroComponent.tsx",
+    "./about" : "./src/About.tsx",
+    "./globe" : "./src/GlobeComponent.tsx",
+    "./Footer" : "./src/Footer.tsx",
+    "./Faq" : "./src/Faq.tsx"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
