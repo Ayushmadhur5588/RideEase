@@ -3,7 +3,7 @@ import HeroComponent from "@repo/ui/hero";
 import About from "@repo/ui/about";
 import GlobeComponent from "@repo/ui/globe";
 import Footer from "@repo/ui/Footer";
-import Accordian from "@repo/ui/Accordian";
+import AccordianContainer from "@repo/ui/AccordianContainer";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <HeroComponent />
       <About />
       <GlobeComponent />
-      <Accordian />
+      <AccordianContainer />
       <Footer />
     </div>
   );
