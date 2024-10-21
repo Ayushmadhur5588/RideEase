@@ -14,7 +14,7 @@ export function Textcomponent() {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center text-black">
+    <div className="flex flex-col items-center justify-center text-black bg-black">
       <TypewriterEffectSmooth words={words} />
     </div>
   );
