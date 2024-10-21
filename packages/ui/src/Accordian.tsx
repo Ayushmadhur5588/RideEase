@@ -1,19 +1,32 @@
-import {data} from "./Constant"
+import { useState } from "react";
+import { data } from "./Constant";
+import AccordianItem from "./AccordianItem";
 
-interface FaqType{
-  query: string,
-  ans: string
+interface FaqType {
+  query: string;
+  ans: string;
 }
 
 const Accordian = () => {
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <div className="w-[50%] mx-auto border-b border-gray-500 py-20">
-      <div className="flex p-4 font-semibold text-6xl justify-center">FAQ's</div>
-      <div className="p-2 font-semibold hover:bg-gray-100">{data[0].query}</div>
-      <div className="text-sm p-4 text-gray-800">{data[0].ans}</div>
+    <div className="w-[55%] mx-auto border-b my-16 pb-10 shadow-lg rounded-lg border border-blue-100">
+      <div className="flex justify-center text-2xl py-10 font-normal">Frequently Asked Questions (FAQ's)</div>
+      {data.map((item, index) => (
+        <AccordianItem
+          key={index}
+          query={item.query}
+          ans={item.ans}
+          isOpen={index === openIndex ? true : false}
+          setIsOpen={() => {
+            index === openIndex ? setOpenIndex(null) : setOpenIndex(index);
+          }}
+          index={index}
+        />
+      ))}
     </div>
-  )
-}
+  );
+};
 
 export default Accordian;
