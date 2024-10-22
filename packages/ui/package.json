@@ -11,7 +11,8 @@
     "./about" : "./src/About.tsx",
     "./globe" : "./src/GlobeComponent.tsx",
     "./Footer" : "./src/Footer.tsx",
-    "./AccordianContainer" : "./src/AccordianContainer.tsx"
+    "./AccordianContainer" : "./src/AccordianContainer.tsx",
+    "./SuggestionContainer" : "./src/SuggestionContainer.tsx"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",

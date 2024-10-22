@@ -1,6 +1,16 @@
+import box from './box.jpg';
+import ride from './ride.jpg';
+import clock from './reserve_clock.jpg';
+
 interface FaqType {
   query: string;
   ans: string;
+}
+
+interface SuggestionType {
+  title: string;
+  description: string;
+  img: string;
 }
 
 export const data: FaqType[] = [
@@ -59,7 +69,6 @@ export const data: FaqType[] = [
  `,
   },
 
-
   {
     query: "How do I start carpooling? ",
     ans: `Carpooling with BlaBlaCar is super easy, and
@@ -67,4 +76,25 @@ export const data: FaqType[] = [
     yourself. Once you have a BlaBlaCar account, you can start booking or
     publishing rides directly on our app or website.`,
   },
+];
+
+export const suggestion: SuggestionType[] = [
+  {
+    title: "Ride",
+    description: "Go anywhere with RideEase. Search for a ride, hop in and go",
+    img : ride
+  },
+  {
+    title: "Package",
+    description: "RideEase Connect makes same-day delivery easier than ever.",
+    img : box
+  },
+  {
+    title: "Reserve",
+    description:
+      "Reserve your ride in advance so that you can relax on the day of your trip.",
+      img : clock
+    }
+  
+
 ];

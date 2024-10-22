@@ -6,7 +6,7 @@ import Nasa from './Nasa.jpg';
 const HeroComponent = () => {
 
   return (
-    <div className="flex justify-between bg-black h-screen px-24 py-20">
+    <div className="flex justify-between bg-black h-fit px-24 py-20">
       <div className="w-[50%] bg-black">
          
         <div className="my-9 bg-black">
