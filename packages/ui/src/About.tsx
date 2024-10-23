@@ -9,7 +9,7 @@ const About = () => {
       <div className="flex justify-between mb-28">
         <div className="w-5/12 mx-auto my-auto">
           <h3 className="text-6xl font-semibold text-blue-950 px-10">
-            Find affordable rides, anytime
+            Find affordable rides
           </h3>
           <p className="w-2/3 text-lg py-10 text-gray-600 font-normal text-wrap px-10">
             Whether you’re looking for a quick trip or a ride along your daily

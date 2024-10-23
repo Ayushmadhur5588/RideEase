@@ -8,7 +8,7 @@ interface FaqType {
 }
 
 const Accordian = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
     <div className="w-[55%] mx-auto border-b my-16 pb-10 shadow-lg rounded-lg border border-blue-100">
